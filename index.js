@@ -19,6 +19,11 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 18;
+if(votingAge >= 18){
+console.log(true);
+}
+console.log(votingAge)
 
 
 
@@ -33,7 +38,12 @@ Do the following:
    HINT: no function required
 */
 
-
+let varOne = "peace";
+let varTwo = "war";
+if(varTwo === "war"){
+   varOne = "war";
+}
+//console.log(varOne);
 
 
 
@@ -47,6 +57,8 @@ Do the following:
 
    HINT: look up the Number method
 */
+let year = "1999";
+console.log(Number(year));
 
 
 
@@ -60,10 +72,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+  return a * b;
 }
-
+console.log(multiply(5, 9));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -76,10 +88,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  return age * 7;
 }
-
+console.log(dogYears(19));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -119,7 +131,7 @@ function hungryDog(weight, age){
   }else if(age >= 1 && weight > 15){
     return weight * 0.02;
   }else if(age < 1 && age >= 0.583){
-    return weight * 0.04
+    return weight * 0.04;
   }else if(age < 0.583 && age >= 0.333){
     return weight * 0.05;
   }else if(age < 0.333){
@@ -127,7 +139,7 @@ function hungryDog(weight, age){
   } 
 }
 
-console.log('task 3', hungryDog(15, 1));
+//console.log('task 3', hungryDog(15, 1));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
