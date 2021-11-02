@@ -1,3 +1,4 @@
+/* eslint-disable no-constant-condition */
 /*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up! 🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
 
 /*MAKE SURE TO RETURN ALL OF THE ANSWERS INSIDE OF A FUNCTION (tasks 1d through task 7), IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
@@ -257,20 +258,21 @@ Using the grade function below do the following:
 */
 
 function grade(score){
-if(score === 90 || 91 || 92 || 93 || 94 || 95 || 96 || 97 || 98 || 99 || 100){
-  return 'you got an A';
-}else if(score === 80 || 81 || 82 || 83 || 84 || 85 || 86 || 87 || 88 || 89){
-  return 'you got a B';
-}else if(score === 70 || 71 || 72 || 73 || 74 || 75 || 76 || 77 || 78 || 79){
-  return 'you got a C';
-}else if(score === 60 || 61 || 62 || 63 || 64 || 65 || 66 || 67 || 68 || 69){
-  return 'you got a D';
-}else{
-  return 'you got an F'
-}
+ if(score >= 90){
+   return 'you got an A';
+ }else if(score >= 80){
+   return 'you got a B';
+ }else if(score >= 70){
+   return 'you got a C';
+ }else if(score >= 60){
+   return 'you got a D';
+ }else{
+   return 'you got an F';
+ }
+
 }
 
-console.log(grade(67));
+console.log(grade(72));
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
