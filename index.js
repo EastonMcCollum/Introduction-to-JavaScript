@@ -256,11 +256,21 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+if(score === 90 || 91 || 92 || 93 || 94 || 95 || 96 || 97 || 98 || 99 || 100){
+  return 'you got an A';
+}else if(score === 80 || 81 || 82 || 83 || 84 || 85 || 86 || 87 || 88 || 89){
+  return 'you got a B';
+}else if(score === 70 || 71 || 72 || 73 || 74 || 75 || 76 || 77 || 78 || 79){
+  return 'you got a C';
+}else if(score === 60 || 61 || 62 || 63 || 64 || 65 || 66 || 67 || 68 || 69){
+  return 'you got a D';
+}else{
+  return 'you got an F'
+}
 }
 
-
+console.log(grade(67));
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
